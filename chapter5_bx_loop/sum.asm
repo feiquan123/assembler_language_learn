@@ -19,6 +19,6 @@ s: 	mov al,[bx]
 	mov ax,4c00h
 	int 21h
 
-ends code
+code ends 
 
 end
