@@ -2,7 +2,7 @@ assume cs:code
 
 code segment
 	dw 0123h,0456h,0789h,0abch,0defh,0fedh,0cbah,0987h
-	; 预留栈空间
+	; 预留栈空间, 为8个字时，mov sp,20h; 为16个字时，mov sp,30h
 	dw 0,0,0,0,0,0,0,0
 	dw 0,0,0,0,0,0,0,0
 start:
