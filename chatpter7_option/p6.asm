@@ -26,6 +26,8 @@ s:
 	inc bx
 	loop s
 
+	mov ax,4c00h
+	int 21h
 codeseg ends
 
 end start
