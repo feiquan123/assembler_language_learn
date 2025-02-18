@@ -8,6 +8,10 @@ start:
 	add ax,1
 s: 	inc ax
 
+	jmp near ptr s0
+	add bx,1
+s0: 	inc bx
+
 	mov ax,4c00h
 	int 21h
 codeseg ends
