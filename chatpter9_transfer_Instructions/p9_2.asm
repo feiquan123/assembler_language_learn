@@ -4,11 +4,11 @@ codeseg segment
 start: 
 	mov ax,0
 	mov bx,0
-	jmp short s
+	jmp short s 	; 标号长度 8 位
 	add ax,1
 s: 	inc ax
 
-	jmp near ptr s0
+	jmp near ptr s0  ; 标号长度 16 位
 	add bx,1
 s0: 	inc bx
 
