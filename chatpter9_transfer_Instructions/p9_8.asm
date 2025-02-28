@@ -13,12 +13,12 @@ start:
 s:  
     mov cl,[bx]
     mov ch,0
-    je ok
+    jcxz ok
     inc bx
     loop s
 
 ok:
-    dec bx
+    ; dec bx
     mov dx,bx
     mov ax,4c00h
     int 21h
